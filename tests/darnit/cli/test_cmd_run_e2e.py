@@ -16,8 +16,6 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
-from sys import stderr
-
 
 import pytest
 
@@ -80,7 +78,7 @@ class TestGoldenPath:
         )
         assert exit_code == 0
 
-        
+
     def test_golden_prints_header(
             self,
             minimal_repo_tree: Path,
